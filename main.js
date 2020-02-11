@@ -49,6 +49,7 @@ ipcMain.on('app_version', (event) => {
 });
 
 autoUpdater.on('update-available', () => {
+    console.log("update available")
     mainWindow.webContents.send('update_available');
 });
 
