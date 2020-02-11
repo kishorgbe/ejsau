@@ -1,0 +1,30 @@
+{
+    "name": "dataaces",
+    "version": "1.0.0",
+    "description": "Auto Update Learning",
+    "main": "main.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kishorgbe/ejsau.git"
+    },
+    "scripts": {
+        "start": "electron .",
+        "build": "electron-builder build --win --publish never",
+        "deploy": "electron-builder build --win --publish always"
+    },
+    "keywords": [
+        "Electron",
+        "AutoUpdate",
+        "Learning"
+    ],
+    "author": "kishordoc",
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^5.0.8",
+        "electron-builder": "^21.2.0",
+        "electron-packager": "^14.0.3"
+    },
+    "dependencies": {
+        "electron-updater": "^4.2.0"
+    }
+}
